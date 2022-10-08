@@ -1,1 +1,1 @@
-# c-
+# any shit c++ scripts
