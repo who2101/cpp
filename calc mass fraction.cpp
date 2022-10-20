@@ -22,6 +22,7 @@ int main()
         if(type == 1) cout << "Result: " << ((fArg2/(fArg+fArg2))*100) << endl;
         else if(type == 2) cout << "Result: " << ((fArg*fArg2)/100) << endl;
     }
+    else cout << "ERROR: Any argument is null" << endl;
 
     return 0;
 }
