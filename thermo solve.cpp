@@ -52,7 +52,7 @@ int main()
 	    
 	std::cout << std::endl;
 	std::cout << "Ответ: " << fArg/fArg2*fArg3/fArg4 << " kJ" << std::endl;
-	}
+    }
     else std::cout << "ERROR: Какое то число равно нулю!" << std::endl;
 	
     return 0;
