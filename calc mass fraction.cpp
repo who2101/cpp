@@ -6,7 +6,7 @@ int main()
 {
     int type; 
     float fArg, fArg2; 
-     string arg, arg2;
+    string arg, arg2;
 
     cout << "Write type of calculate mass (1 or 2)" << endl;
     cin >> type;
@@ -19,14 +19,20 @@ int main()
 
     fArg = stof(arg); fArg2 = stof(arg2);
         
+    if(type <= 0 || > 2)
+    {
+        cout << "ERROR: Неправильный тип" << endl;
+        
+        return 0;
+    }
+
     if(fArg || fArg2 <= 0.0) 
     {
         cout << "ERROR: Одно из чисел равно нулю" << endl;
 
-        return;
+        return 0;
     }
 
-    if(type <= 0 || > 2) cout << "ERROR: Неправильное значение типа" << endl;
     if(type == 1)
     {
         cout << "Result: " << ((fArg2/(fArg+fArg2))*100) << endl;
